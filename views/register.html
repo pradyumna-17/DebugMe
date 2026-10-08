@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register - DebugMe</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/auth.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <div class="nav">
+
+        <div class="logo">
+            <img src="/assets/DMLogo.png" alt="Logo" width="200">
+        </div>
+
+        <ul>
+            <li><a href="/index">Home</a></li>
+            <li><a href="/search">Search Errors</a></li>
+            <li><a href="/add-error">Add Error</a></li>
+        </ul>
+
+        <div class="btns">
+
+            <button class="login" onclick="location.href='/login'">
+                Login
+            </button>
+
+            <button class="register" onclick="location.href='/register'">
+                Register
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- REGISTER PAGE -->
+
+    <section class="auth-page">
+
+        <div class="auth-card register-card">
+
+            <div class="auth-header">
+
+                <span class="auth-badge">
+                    🚀 Join DebugMe
+                </span>
+
+                <h1>Create Account</h1>
+
+                <p>
+                    Join the community and help other students solve coding errors.
+                </p>
+
+            </div>
+
+
+            <form id="registerForm" action="/register" method="POST">
+
+                <div class="auth-group">
+
+                    <label for="name">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your full name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="auth-group">
+
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="auth-group">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Create a password"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="auth-group">
+
+                    <label for="confirmPassword">
+                        Confirm Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        name="confirmPassword"
+                        placeholder="Confirm your password"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="terms">
+
+                    <label>
+
+                        <input type="checkbox" id="terms" required>
+
+                        I agree to the DebugMe terms and conditions.
+
+                    </label>
+
+                </div>
+
+
+                <button type="submit" class="auth-btn">
+                    Create Account
+                </button>
+
+            </form>
+
+
+            <div class="auth-divider">
+                <span>OR</span>
+            </div>
+
+
+            <div class="guest-login">
+
+                <button onclick="location.href='/index'">
+                    Continue as Guest
+                </button>
+
+            </div>
+
+
+            <p class="auth-bottom">
+
+                Already have an account?
+
+                <a href="/login">
+                    Login
+                </a>
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-logo">
+            &lt;/&gt; DebugMe
+        </div>
+
+        <nav>
+            <a href="/index">Home</a>
+            <a href="/search">Search Errors</a>
+            <a href="/add-error">Add Error</a>
+        </nav>
+
+        <div class="copy">
+            © 2025 DebugMe. Built for students, by Pradyumna & Khushal.
+        </div>
+
+        <div class="social">
+            <i class="fab fa-github"></i>
+            <i class="fab fa-discord"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+
+    </footer>
+
+
+    <script>
+
+        document.getElementById("registerForm").addEventListener("submit", function(event) {
+            const password =
+                document.getElementById("password").value;
+
+            const confirmPassword =
+                document.getElementById("confirmPassword").value;
+
+            if (password !== confirmPassword) {
+
+                event.preventDefault();
+                alert("Passwords do not match.");
+                return;
+
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>
