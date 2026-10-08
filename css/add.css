@@ -221,3 +221,310 @@
     font-size:20px;
     cursor:pointer;
 }
+
+/* =========================
+   ERROR DETAILS PAGE
+========================= */
+
+.error-page {
+    width: 90%;
+    max-width: 1300px;
+    margin: 30px auto;
+}
+
+/* Back Link */
+
+.back-link {
+    text-decoration: none;
+    color: #2563EB;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+/* Header Card */
+
+.error-header-card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 25px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border: 1px solid #E2E8F0;
+    box-shadow: 0 8px 20px rgba(0,0,0,.05);
+
+    margin-bottom: 25px;
+}
+
+.error-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.error-icon {
+    width: 80px;
+    height: 80px;
+
+    border-radius: 18px;
+
+    background: #FEE2E2;
+    color: #EF4444;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.error-info h2 {
+    font-size: 34px;
+    color: #0F172A;
+    margin-bottom: 12px;
+}
+
+.error-tags {
+    display: flex;
+    gap: 10px;
+}
+
+.error-tags span {
+    background: #EFF6FF;
+    color: #2563EB;
+
+    padding: 8px 15px;
+    border-radius: 20px;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.upvote-box {
+    text-align: center;
+
+    width: 120px;
+    height: 120px;
+
+    background: #F8FAFC;
+    border-radius: 16px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border: 1px solid #E2E8F0;
+}
+
+.vote-arrow {
+    font-size: 24px;
+    color: #2563EB;
+}
+
+.upvote-box h3 {
+    font-size: 30px;
+    color: #1D4ED8;
+}
+
+.upvote-box p {
+    color: #64748B;
+    font-size: 14px;
+}
+
+/* Main Content */
+
+.error-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+}
+
+/* Left Side */
+
+.info-card {
+    background: white;
+    border-radius: 18px;
+    padding: 25px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #E2E8F0;
+    box-shadow: 0 8px 20px rgba(0,0,0,.04);
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-size: 22px;
+    font-weight: 700;
+
+    margin-bottom: 20px;
+
+    color: #0F172A;
+}
+
+.small-icon {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: bold;
+}
+
+.cyan-bg {
+    background: #CFFAFE;
+    color: #0891B2;
+}
+
+.purple-bg {
+    background: #F3E8FF;
+    color: #7C3AED;
+}
+
+.green-bg {
+    background: #DCFCE7;
+    color: #16A34A;
+}
+
+.info-card p {
+    color: #475569;
+    line-height: 1.9;
+    font-size: 16px;
+}
+
+.info-card ul {
+    padding-left: 22px;
+}
+
+.info-card li {
+    margin-bottom: 12px;
+    color: #475569;
+    line-height: 1.7;
+}
+
+/* Right Side */
+
+.related-card,
+.helpful-card {
+
+    background: white;
+    border-radius: 18px;
+    padding: 25px;
+
+    border: 1px solid #E2E8F0;
+    box-shadow: 0 8px 20px rgba(0,0,0,.04);
+}
+
+.related-card {
+    margin-bottom: 20px;
+}
+
+.related-card h3 {
+    color: #0F172A;
+    margin-bottom: 20px;
+}
+
+.related-card a {
+    display: block;
+    text-decoration: none;
+
+    color: #2563EB;
+
+    padding: 12px 0;
+
+    border-bottom: 1px solid #F1F5F9;
+
+    font-weight: 500;
+}
+
+.related-card a:last-child {
+    border-bottom: none;
+}
+
+.helpful-card {
+    text-align: center;
+}
+
+.help-icon {
+    width: 65px;
+    height: 65px;
+
+    margin: auto;
+
+    border-radius: 18px;
+
+    background: #EEF2FF;
+    color: #4F46E5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 28px;
+
+    margin-bottom: 15px;
+}
+
+.helpful-card h4 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.helpful-card p {
+    color: #64748B;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.helpful-card button {
+
+    width: 100%;
+
+    border: none;
+
+    background: linear-gradient(
+        90deg,
+        #2563EB,
+        #4F46E5
+    );
+
+    color: white;
+
+    padding: 14px;
+
+    border-radius: 10px;
+
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+    .error-header-card{
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .error-info{
+        flex-direction: column;
+    }
+
+    .error-content{
+        grid-template-columns: 1fr;
+    }
+
+}
