@@ -20,19 +20,13 @@ app.get('/register', (req, res) => {
 });
 
 app.post('/register', (req, res) => {
-    const { name, email, password, confirmPassword } = req.body;
 
-    if (![name, email, password, confirmPassword].every(
-        value => typeof value === 'string' && value.trim()
-    )) {
-        return res.status(400).send('Please provide all registration fields.');
-    }
+    console.log("POST route hit");
 
-    if (password !== confirmPassword) {
-        return res.status(400).send('Passwords do not match.');
-    }
+    console.log(req.body);
 
-    res.status(501).send('The registration request was received, but account creation is not implemented yet.');
+    res.send("Success");
+
 });
 
 app.get('/search', (req, res) => {
