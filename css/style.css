@@ -50,14 +50,14 @@ body {
     border-bottom: 2px solid #1D4ED8;
 }
 
+.nav ul li a:hover {
+    color: #1D4ED8;
+}
+
 .nav ul li a {
     text-decoration: none;
     color: #475569;
     font-weight: bold;
-}
-
-.nav ul li a:hover{
-    color: #1D4ED8;
 }
 
 .btns {
@@ -65,6 +65,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+
+.btns button a{
+    text-decoration: none;
+    color: #1D4ED8;
 }
 
 .btns button {
@@ -80,6 +85,10 @@ body {
 
 .btns button:hover {
     background-color: #1D4ED8;
+    color: #ffffff;
+}
+
+.btns button:hover a {
     color: #ffffff;
 }
 

@@ -1,0 +1,376 @@
+/* =========================
+   DEBUGME AUTHENTICATION
+   LOGIN + REGISTER
+========================= */
+
+
+/* =========================
+   AUTH PAGE
+========================= */
+
+.auth-page {
+    width: 100%;
+    min-height: calc(100vh - 90px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px 20px;
+}
+
+
+/* =========================
+   AUTH CARD
+========================= */
+
+.auth-card {
+    width: 430px;
+    margin: 0 auto;
+
+    background: #ffffff;
+
+    padding: 38px;
+
+    border-radius: 24px;
+
+    border: 1px solid #E2E8F0;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .07);
+}
+
+
+/* Register slightly wider */
+
+.register-card {
+    width: 460px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   AUTH HEADER
+========================= */
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/* Badge */
+
+.auth-badge {
+    display: inline-block;
+
+    padding: 9px 17px;
+
+    border-radius: 25px;
+
+    background: #E6F0FF;
+
+    color: #1D4ED8;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    margin-bottom: 15px;
+}
+
+
+/* Heading */
+
+.auth-header h1 {
+    font-size: 42px;
+
+    color: #03246B;
+
+    font-weight: 800;
+
+    margin-bottom: 10px;
+}
+
+
+/* Subtitle */
+
+.auth-header p {
+    color: #64748B;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   FORM GROUP
+========================= */
+
+.auth-group {
+    margin-bottom: 20px;
+}
+
+
+/* Labels */
+
+.auth-group label {
+    display: block;
+
+    color: #334155;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin-bottom: 8px;
+}
+
+
+/* Input */
+
+.auth-group input {
+    width: 100%;
+
+    padding: 14px 16px;
+
+    border: 1px solid #CBD5E1;
+
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    color: #0F172A;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+
+/* Input focus */
+
+.auth-group input:focus {
+    border-color: #2563EB;
+
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+
+/* =========================
+   FORGOT PASSWORD
+========================= */
+
+.forgot-password {
+    text-align: right;
+
+    margin-top: -8px;
+
+    margin-bottom: 20px;
+}
+
+.forgot-password a {
+    text-decoration: none;
+
+    color: #2563EB;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   LOGIN / REGISTER BUTTON
+========================= */
+
+.auth-btn {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: linear-gradient(
+        90deg,
+        #2563EB,
+        #4F46E5
+    );
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.auth-btn:hover {
+    opacity: 0.92;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================
+   OR DIVIDER
+========================= */
+
+.auth-divider {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin: 25px 0;
+
+    color: #94A3B8;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+    content: "";
+
+    flex: 1;
+
+    height: 1px;
+
+    background: #E2E8F0;
+}
+
+
+/* =========================
+   GUEST BUTTON
+========================= */
+
+.guest-login button {
+    width: 100%;
+
+    padding: 13px;
+
+    border-radius: 10px;
+
+    border: 1px solid #CBD5E1;
+
+    background: #ffffff;
+
+    color: #334155;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.guest-login button:hover {
+    background: #F8FAFC;
+
+    border-color: #94A3B8;
+}
+
+
+/* =========================
+   TERMS & CONDITIONS
+========================= */
+
+.terms {
+    margin-bottom: 20px;
+
+    color: #64748B;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+.terms label {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 8px;
+
+    cursor: pointer;
+}
+
+.terms input {
+    margin-top: 3px;
+
+    accent-color: #2563EB;
+}
+
+
+/* =========================
+   BOTTOM LOGIN / REGISTER
+========================= */
+
+.auth-bottom {
+    text-align: center;
+
+    margin-top: 25px;
+
+    color: #64748B;
+
+    font-size: 14px;
+}
+
+.auth-bottom a {
+    color: #2563EB;
+
+    text-decoration: none;
+
+    font-weight: 700;
+}
+
+.auth-bottom a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+    .auth-page {
+        padding: 30px 15px;
+    }
+
+    .auth-card,
+    .register-card {
+        width: 100%;
+        max-width: 460px;
+
+        padding: 28px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .auth-header h1 {
+        font-size: 34px;
+    }
+
+}
